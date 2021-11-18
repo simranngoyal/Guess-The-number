@@ -1,0 +1,16 @@
+import random 
+
+count=1
+comp = random.randint(1,100)
+user = int(input("Guess the number: "))
+while(user!=comp):
+    if(user>comp):
+        print("enter lower number!!")
+        count+=1
+        user = int(input("Guess the number: "))
+    else:
+        print("eneter greater number!!")
+        count+=1
+        user = int(input("Guess the number: "))
+
+print(f"You guessed it right!! You took {count} guesses")
